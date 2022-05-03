@@ -1,0 +1,194 @@
+# my first basic python have done .interduction page(32 page include)
+# print('Hello world')
+
+# a = 10 + 40
+# b = 20.9
+# print('sum of number', a + b)
+#
+# print(a)
+# if a > 10:
+#     print('a is greater')
+#     print("hello a")
+# else:
+#     print('hii threre "i am akash an android" developer ')
+# print(type(a))
+print("First chaprter :\n")
+a = 10
+print(type(a))
+print(id(a))  # to find address
+print(bin(a))
+print(hex(a))
+print(oct(a))
+
+# to learn imaginary number
+print('To learn about imaginary number\n')
+a = 10 + 5.5j
+b = 10 + 9.5j
+c = a + b
+print(c)
+print(c.real)
+print(c.imag)
+
+# leran about boolean value
+print('To learn about boolean\n')
+a = True
+b = True
+c = False
+print(a + b)
+print(a - b)
+print(a == c)
+print(a < c)
+
+# leran about string
+print('To learn about String')
+# in python char type is not aviliable but u can represent char value using by str
+a = "akash"
+b = "kumar"
+print(a + "  " + b)
+# by using single and double quote u cant print multiline string
+# to print multiline string use """ here is your message"""
+a = """akash
+   kumar"""
+print(a)
+# or
+a = '''akash
+kumar'''
+print(a)
+
+# slicing of Strings
+# [] this is called slice operator
+print("To learn about String index")
+a = "khushi"
+print(a[0])
+print(a[-6])
+print(a * 3)
+print(a[1:])  # except first charcter
+print(a[:4])  # include 4 charcter
+
+# Type Casting
+print('To leran about type casting in python')
+a = 10.23
+print(int(a))
+a = "34"
+
+a = True
+print(int(a))
+a = "10"
+print(int(a))
+# a="ten" #its invaild
+# print(int(a))
+# a=10+5j  #invalid
+# print(int(a))
+# a="10.5" #invaild
+# print(int(a))
+a = "10.5"
+print(float(a))
+a = 10
+print(complex(a))
+print(complex(10.5))
+print(complex("10.6"))
+print(complex(10, -2))
+print(complex(8, 9))
+print(bool(""))
+print(bool(0.0))
+print(bool(10 + 10j))
+print(bool("true"))
+print(bool("10"))
+print("this is boolean type Aakash result\n")
+print(bool("akash"))
+print(str(10))
+print(str(10 + 5j))
+print(str(True))
+a = 10
+b = 10
+print(a is b)
+print(id(a))
+print(id(b))
+a = 10 + 5j
+b = 10 + 5j
+print(id(a))
+print(id(b))
+print(a is b)
+
+
+
+
+# byte data type
+print('Byte Variable \n concept')
+x = [10, 20, 30, 40]
+b = bytes(x)
+type(b)
+print(b[0])
+print(b[-1])
+for x in b:
+    print(x)
+
+# byteArray->byteaaray is same as byte type except that its element can modified
+print('bytearray concept \n')
+x = [21, 22, 23, 24]
+b = bytearray(x)
+b[0] = 90
+for i in b: print(i)
+
+# learn about list data type in python
+print("list data type\n")
+x = [50, 256, 420, 380]
+x.append("Aakash kumar")
+x.remove(256)
+x = x * 5  # to print the data multiple time
+for i in x: print(i)
+
+# touple is same as list there is
+# only defference is that it is immutable thatswhy u can't change it
+# u have to write within pranthisis ()
+
+print("leran about tuple")
+t = (58, 89, 90, 124)
+for i in t: print(i)
+
+# range data type is immutable it is used to define sequence of number
+print("learn about range \n")
+
+r = range(10)  # it start from zero
+for i in r: print(i)
+# overloaded method on range.
+
+print("overloaded method range")
+r = range(20, 25, 2)  # third argument use for increment value
+print("range value on zero index ", r[0])
+for i in r: print(i)
+
+# setData type -> where order is importent and without duplicate of value then
+# we should go with set Data type
+print("set data type")
+x = {20, 30, 40, 40, 'aakash'}
+for i in x: print(i)
+print("after adding some element in set data type")
+x.add(0)
+for i in x: print(i)
+
+# frozenset data type -> it is exactly same as set but it is immutable.
+print("frozen set datatype")
+s = {10, 20, 40}
+fs = frozenset(s)
+for i in fs: print(i)
+
+# dict data type->it is same as map class of java
+
+print("dict data type")
+map = {101: 'akash', 102: "mohan"}
+print(map)
+print(map[101])
+
+
+
+# None means null value of java
+
+print("None value : ")
+
+
+def m1():
+    a = 10
+
+
+print(m1())  # HERE IS OUTOPUT IS NONE
